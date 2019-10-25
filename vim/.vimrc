@@ -17,7 +17,7 @@ set laststatus=2 " for airline
 " nerdtree
 map <C-b> :NERDTreeToggle<CR>
 " MRU
-map <Leader>n :MRU<CR>
+map <C-r> :MRU<CR>
 
 " pathogen
 execute pathogen#infect()
