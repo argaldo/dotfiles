@@ -11,7 +11,7 @@ set background=dark
 colorscheme nord
 
 " airline statusbar
-let g:airline_theme = 'nord'
+let g:airline_theme = 'dracula'
 set laststatus=2 " for airline
 
 " nerdtree
