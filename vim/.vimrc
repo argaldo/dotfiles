@@ -1,4 +1,5 @@
 syntax on
+
 set mouse-=a  " no mouse
 set cursorline " cursor line highlight
 set hlsearch   " highlight search
@@ -8,6 +9,7 @@ set tabstop=3
 set softtabstop=3
 set expandtab
 set background=dark
+set splitright
 colorscheme nord
 
 " airline statusbar
@@ -18,6 +20,9 @@ set laststatus=2 " for airline
 map <C-b> :NERDTreeToggle<CR>
 " MRU
 map <C-r> :MRU<CR>
+" iPython window
+map <C-i> :vert term ipython3<CR>
+noremap <C-c> :close<CR>
 
 " pathogen
 execute pathogen#infect()
