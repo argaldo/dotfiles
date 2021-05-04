@@ -12,6 +12,10 @@ set background=dark
 set splitright
 set number
 colorscheme nord
+"colorscheme dracula
+"colorscheme gruvbox 
+"colorscheme monokai
+"colorscheme solarized
 
 " airline statusbar
 let g:airline_theme = 'dracula'
@@ -37,3 +41,8 @@ set termguicolors
 
 " go to the position I was when last editing the file
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+" change color scheme with programming language
+autocmd FileType python colorscheme nord
+autocmd FileType rust colorscheme gruvbox
+autocmd FileType java colorscheme desert
