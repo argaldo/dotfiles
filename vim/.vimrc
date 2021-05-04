@@ -16,6 +16,7 @@ colorscheme nord
 "colorscheme gruvbox 
 "colorscheme monokai
 "colorscheme solarized
+"colorscheme apprentice
 
 " airline statusbar
 let g:airline_theme = 'dracula'
@@ -44,5 +45,5 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 
 " change color scheme with programming language
 autocmd FileType python colorscheme nord
-autocmd FileType rust colorscheme gruvbox
+autocmd FileType rust colorscheme apprentice
 autocmd FileType java colorscheme desert
