@@ -10,6 +10,7 @@ set softtabstop=3
 set expandtab
 set background=dark
 set splitright
+set number
 colorscheme nord
 
 " airline statusbar
