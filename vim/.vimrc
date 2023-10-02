@@ -1,3 +1,6 @@
+" Language Server Protocol
+packadd lsp
+
 syntax on
 
 set mouse-=a  " no mouse
@@ -47,3 +50,10 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 autocmd FileType python colorscheme nord
 autocmd FileType rust colorscheme gruvbox
 autocmd FileType java colorscheme desert
+
+" Adding Python LSP
+call LspAddServer([#{name: 'pylsp',
+                 \   filetype: 'python',
+                 \   path: '/home/argaldo/.local/bin/pylsp',
+                 \   args: []
+                 \ }])
