@@ -52,8 +52,9 @@ autocmd FileType rust colorscheme gruvbox
 autocmd FileType java colorscheme desert
 
 " Adding Python LSP
+" To install:  pip install python-lsp-server
 call LspAddServer([#{name: 'pylsp',
                  \   filetype: 'python',
-                 \   path: '/home/argaldo/.local/bin/pylsp',
+                 \   path: 'pylsp',
                  \   args: []
                  \ }])
