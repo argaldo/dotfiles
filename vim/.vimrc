@@ -52,9 +52,26 @@ autocmd FileType rust colorscheme gruvbox
 autocmd FileType java colorscheme desert
 
 " Adding Python LSP
-" To install:  pip install python-lsp-server
 call LspAddServer([#{name: 'pylsp',
                  \   filetype: 'python',
-                 \   path: 'pylsp',
+                 \   path: '/home/argaldo/.local/bin/pylsp',
                  \   args: []
                  \ }])
+" Opening NERDTree on startup and go to editing window
+au VimEnter * NERDTree
+au VimEnter * wincmd l
+
+" Function to close NERDTree if it is the one and only last buffer left
+function! s:CloseIfOnlyControlWinLeft()
+  if winnr("$") != 1
+    return
+  endif
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+        \ || &buftype == 'quickfix'
+    q
+  endif
+endfunction
+augroup CloseIfOnlyControlWinLeft
+  au!
+  au BufEnter * call s:CloseIfOnlyControlWinLeft()
+augroup END
