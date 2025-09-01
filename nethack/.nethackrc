@@ -1,1 +1,8 @@
-OPTIONS=windowtype:curses,perm_invent
+OPTIONS=windowtype:curses
+OPTIONS=perm_invent
+OPTIONS=pickup_types:?!/$
+OPTIONS=role:valkyrie
+OPTIONS=race:dwarf
+OPTIONS=gender:female
+OPTIONS=alignment:lawful
+OPTIONS=showexp,showscore,time,color
