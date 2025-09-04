@@ -5,4 +5,5 @@ OPTIONS=role:valkyrie
 OPTIONS=race:dwarf
 OPTIONS=gender:female
 OPTIONS=align:lawful
+OPTIONS=number_pad:1
 OPTIONS=showexp,showscore,time,color
