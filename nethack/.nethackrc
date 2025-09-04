@@ -4,5 +4,5 @@ OPTIONS=pickup_types:?!/$
 OPTIONS=role:valkyrie
 OPTIONS=race:dwarf
 OPTIONS=gender:female
-OPTIONS=alignment:lawful
+OPTIONS=align:lawful
 OPTIONS=showexp,showscore,time,color
