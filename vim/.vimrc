@@ -14,7 +14,8 @@ set expandtab
 set background=dark
 set splitright
 set number
-colorscheme nord
+"colorscheme nord
+colorscheme everforest
 "colorscheme dracula
 "colorscheme gruvbox 
 "colorscheme monokai
@@ -22,7 +23,7 @@ colorscheme nord
 "colorscheme apprentice
 
 " airline statusbar
-let g:airline_theme = 'dracula'
+let g:airline_theme = 'everforest'
 set laststatus=2 " for airline
 
 " nerdtree
@@ -47,7 +48,7 @@ set termguicolors
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
 " change color scheme with programming language
-autocmd FileType python colorscheme nord
+autocmd FileType python colorscheme everforest
 autocmd FileType rust colorscheme gruvbox
 autocmd FileType java colorscheme desert
 
