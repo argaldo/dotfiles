@@ -51,6 +51,7 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 autocmd FileType python colorscheme everforest
 autocmd FileType rust colorscheme gruvbox
 autocmd FileType java colorscheme desert
+autocmd FileType bal coloscheme everforest
 
 " Adding Python LSP
 "call LspAddServer([#{name: 'pylsp',
